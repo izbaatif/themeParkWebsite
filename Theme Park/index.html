@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+      <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0561e3b384.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Theme Park</title>
+  </head>
+  <body>
+    <nav>
+      <!-- Top Nav bar -->
+      <img src="/images/logo.png" class="navbar__logo"/>
+      <i class="fas fa-bars burger-button" id="burger-button"></i>
+      <div class="navbar__links">
+        <button class="navbar__links__button"><a href="index.html">Home</a></button>
+        <button class="navbar__links__button"><a href="booking.html">Tickets / Passess</a></button>
+        <button class="navbar__links__button"><a href="rides.html">Plan your visit</a></button>
+        <button class="navbar__links__booknow" id="booknow">
+          <a href="booking.html">Book Now</a>
+        </button>
+      </div>
+    </nav>
+
+
+    <div class="mobile-menu" id="mobile-menu">
+      <i class="fas fa-times mobile-menu__cross" id="mobile-menu-cross"></i>
+      <button class="mobile-menu__links__button">
+        <p>Tickets</p>
+      </button>
+      <button class="mobile-menu__links__button"><p>Short Breaks</p></button>
+      <button class="mobile-menu__links__button"><p>Plan your visit</p></button>
+      <button class="mobile-menu__links__booknow" id="booknow">
+        <p>Book now</p>
+      </button>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item carousel-1-img">
+         
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item carousel-2-img">
+        
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item carousel-3-img">
+            
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+   
+               <div class="carousel__heading">
+          <h1 class="carousel__heading__heading-top">New!!</h1>
+          <h1 class="carousel__heading__heading-bot">Whirlpool! Opening Soon!</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-box">
+      <!-- Can use divs to create the buttons / image files? / or svgs -->
+      <div class="ticket-box__item">
+        <a href="#">
+          <h4 class="ticket-box__item__title">Day Tickets</h4>
+        <p class="ticket-box__item__text">For those one-dayers!</p>
+        </a>
+        
+      </div>
+      <div class="ticket-box__item">
+        <a href="#">
+          <h4 class="ticket-box__item__title">Short breaks</h4>
+        <p class="ticket-box__item__text">Great range of accomodation!</p>
+        </a>
+        
+      </div>
+      <div class="ticket-box__item">
+        <a href="#">
+          <h4 class="ticket-box__item__title">Annual passes</h4>
+        <p class="ticket-box__item__text">For thrill lovers and seekers!</p>
+        </a>
+        
+      </div>
+    </div>
+
+    <div class="info-cards">
+      <!-- 4 info cards with an image-->
+      <div class="info-cards__card card-one">
+        <div class="info-cards__card__desc">
+          <p class="info-cards__card__desc__text-top">Exciting!</p>
+          <p class="info-cards__card__desc__text-bot">The new Twirler</p>
+        </div>
+      </div>
+
+      <div class="info-cards__card card-two">
+        <div class="info-cards__card__desc">
+          <p class="info-cards__card__desc__text-top">Fast!</p>
+          <p class="info-cards__card__desc__text-bot">Rollercoasters!</p>
+        </div>
+      </div>
+
+      <div class="info-cards__card card-three">
+        <div class="info-cards__card__desc">
+          <p class="info-cards__card__desc__text-top">Crazy!</p>
+          <p class="info-cards__card__desc__text-bot">Rollercoatsers!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="keypoints">
+      <!--  THi shas the main attractions and its key information in -->
+      <div class="keypoints__item">
+        <img src="../images/bigwheel.png" class="keypoints__item__img" ></img>
+
+        <div class="keypoints__item__info">
+          <div class="keypoints__item__info__textbox">
+            <h2 class="keypoints__item__info__textbox__title">
+              A Super Day Out!
+            </h2>
+            <h5 class="keypoints__item__info__textbox__subtitle">
+              For all the family.
+            </h5>
+            <div class="featuresWrapper">
+              <div class="featureItemm">
+                <img src="../images/father-and-son.png" alt="Father and son" width="30px">
+                <p>&nbsp;Adult and children zones, a ride for everyone!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/coconut-drink.png" alt="Coconut drink" width="30px">
+                <p>&nbsp;Great food and drink, you might find a nice dessert too!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/baby.png" alt="Baby" width="30px">
+                <p>&nbsp;Baby and child facilities available.!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/nursery.png" alt="Nursery" width="30px">
+                <p>&nbsp;Nursery for your babies to stay.</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/dancing.png" alt="People dancing" width="30px">
+                <p>&nbsp;Fun for all!</p>
+              </div>
+            </div>
+          </div>
+          <button class="keypoints__item__info__button">Find out more!</button>
+        </div>
+      </div>
+
+      <div class="keypoints__item">
+        <div class="keypoints__item__info">
+          <div class="keypoints__item__info__textbox">
+            <h2 class="keypoints__item__info__textbox__title">
+              Stay overnight?
+            </h2>
+            <h5 class="keypoints__item__info__textbox__subtitle">
+              Affordable rates
+            </h5>
+            <div class="featuresWrapper">
+              <div class="featureItemm">
+                <img src="../images/hotel.png" alt="Hotel" width="30px">
+                <p>&nbsp;Choose from hotel, apartment or cabin accomodation!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/best-price.png" alt="Pricing" width="30px">
+                <p>&nbsp;Great prices and faciltiies!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/amusement-park.png" alt="Amusement park" width="30px">
+                <p>&nbsp;Easy access to all park facilities and attractions!!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/maintenance.png" alt="Maintenance" width="30px">
+                <p>&nbsp;House keeping 24/7.</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/star.png" alt="VIP access" width="30px">
+                <p>&nbsp;VIP access to special rides.</p>
+              </div>
+            </div>
+          </div>
+          <button class="keypoints__item__info__button">Find out more!</button>
+        </div>
+        <img src="../images/enterance.jpg" class="keypoints__item__img" ></img>
+      </div>
+
+      <div class="keypoints__item">
+        <img src="../images/stayovernight.jpg" class="keypoints__item__img" ></img>
+
+        <div class="keypoints__item__info">
+          <div class="keypoints__item__info__textbox">
+            <h2 class="keypoints__item__info__textbox__title">Hungry?</h2>
+            <h5 class="keypoints__item__info__textbox__subtitle">
+              Street food to premium dining.
+            </h5>
+            <div class="featuresWrapper">
+              <div class="featureItemm">
+                <img src="../images/cutlery.png" alt="Cutlery" width="30px">
+                <p>&nbsp;Find a range of food for all taste buds.</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/deal.png" alt="Deals" width="30px">
+                <p>&nbsp;Reasonabley priced for all to enjoy.</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/menu.png" alt="Food menu" width="30px">
+                <p>&nbsp;Lweekly menu change to keep things fresh!</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/liquor.png" alt="Alcahol" width="30px">
+                <p>&nbsp;Range of wines and alcahol to accompany your meal.</p>
+              </div>
+              <div class="featureItemm">
+                <img src="../images/boy.png" alt="Boy" width="30px">
+                <p>&nbsp;Children under 5 eat free!</p>
+              </div>
+            </div>
+          </div>
+          <button class="keypoints__item__info__button">Find out more!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prefooter">
+      <input class="prefooter__input" type="email" placeholder="Sign up to our newsletter"/>
+      <button class="prefooter__submit">Submit</button>
+    </div>
+
+    <footer>
+      <!-- Footer with four colums and some elements -->
+        <div class="footer-col">
+          <h5 class="footer-col__title">Information</h5>
+          <a href="#">Directions</a>
+          <a href="#">Parking</a>
+          <a href="#">Opening Times</a>
+        </div>
+  
+        <div class="footer-col">
+          <h5 class="footer-col__title">Attractions</h5>
+          <a href="#">Rides</a>
+          <a href="#">Events</a>
+          <a href="#">Specials</a>
+        </div>
+  
+        <div class="footer-col">
+          <h5 class="footer-col__title">Our Company</h5>
+          <a href="#">Our Company</a>
+          <a href="#">Help Center</a>
+          <a href="#">Press</a>
+          <a href="#">Jobs</a>
+        </div>
+  
+        <div class="footer-col">
+          <h5 class="footer-col__title">Legal</h5>
+          <a href="#">Legal</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+      </script>
+  </body>
+</html>

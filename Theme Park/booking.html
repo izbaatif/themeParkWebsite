@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" type="text/css" href="../css/booking.css">
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+            <link rel="stylesheet" type="text/css" href="../css/index.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <title>Bookings</title>
+   </head>
+   <body>
+      <nav>
+         <!-- Top Nav bar -->
+         <img src="../images/logo.png" class="navbar__logo" />
+         <i class="fas fa-bars burger-button" id="burger-button"></i>
+         <div class="navbar__links">
+            <button class="navbar__links__button"><a href="index.html">Home</a></button>
+            <button class="navbar__links__button"><a href="booking.html">Tickets / Passes</a></button>
+            <button class="navbar__links__button"><a href="rides.html">Plan your visit</a></button>
+            <button class="navbar__links__booknow" id="booknow">
+            <a href="booking.html">Book Now</a>
+            </button>
+         </div>
+      </nav>
+      <!--Booking Form-->
+      <div class="container">
+         <form>
+            <div id="formHeading"> Booking Form </div>
+            <h2> Visit Dates: </h2>
+            <input type="date" class="startVisit" placeholder="Start date of visit"> <input type="date" class="endVisit" placeholder="End date of visit"> <br>
+            <h2> Name :</h2>
+            <input type="text" class="firstName" placeholder="First name"> <input type="text" class="lastName" placeholder="Last name"> <br>
+            <h2> Email Address: </h2>
+            <input type="text" class="emailAddress" placeholder="Enter email address"> <br>
+            <h2> Mobile Number: </h2>
+            <input type="text" class="mobileNumber" placeholder="Enter mobile number"> <br>
+            <h2> Enter Number in Group: </h2>
+            <label for="adults">Adult: </label>
+            <select id="adults" name="adults">
+               <option value="0">0</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4+</option>
+            </select>
+            <label for="kids" type="text" class="childNo" placeholder="Child">Children: </label>
+            <select id="kids" name="kids">
+               <option value="0">0</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4+</option>
+            </select>
+            <label for="srCitizens" type="text" class="srCitizensNo" placeholder="Seniors">Senior Citizens: </label>
+            <select id="srCitizens" name="srCitizens">
+               <option value="0">0</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4+</option>
+            </select>
+            <button type="button" class="formButtons"> Continue to Payment Information </button>
+            <div id="smallprint">Prices, availability of attractions, operating schedule and park policies are subject to change without notice. Processing fees apply to online orders.<br>
+               Be sure to check for travel restrictions before booking and traveling to an accommodation. Touristic travel might not be allowed, as travel may only be permitted for certain purposes.
+            </div>
+         </form>
+      </div>
+      <!-----Map Image along with the rides name linked to rides page-->
+      <div class="mapImage">
+         <div class="box">
+            <img src="../images/map.JPG" alt="Map" class="mapImg">
+            <div class="ride1"> <a href="rides.html#rides"> Twirler</a></div>
+            <div class="ride2"> <a href="rides.html#rides"> Coaster</a></div>
+            <div class="ride3"> <a href="rides.html#rides"> The Eye</a></div>
+            <div class="ride4"> <a href="rides.html#rides"> Wild Mouse</a></div>
+            <div class="ride5"> <a href="rides.html#rides"> Roller-Soaker</a></div>
+            <div class="ride6"> <a href="rides.html#rides"> Log Flume</a></div>
+            <div class="ride7"> <a href="rides.html#rides"> Dinosaur- <br> Go-Around </a></div>
+            <div class="foodDrink"> <a href="rides.html#acces"> Food and <br> Drinks</a></div>
+            <div class="children"> <a href="rides.html#acces"> Areas for <br> children </a></div>
+         </div>
+      </div>
+      <!---Grid to arrange the reviews-->
+      <div id="reviews">
+      <div class="reviews__grid">
+         <div class="heading">
+            <h1> Reviews:</h1>
+         </div>
+         <div class="img1"><img src="../images/person1.jpg" alt="Person" height="50px" width="50px"></div>
+         <div class="one review-div">
+            <div id="personName"> Tracey Hardin</div>
+            <div id="text"> This is the best theme park. The rides lived up to the hype, but I was most surprised by how delicious and affordable the food was. They even had vegan and vegetarian options. I recommend the nachos.</div>
+         </div>
+         <div class="img2"><img src="../images/person2.jpg" alt="Person" height="50px" width="50px"></div>
+         <div class="two review-div">
+            <div id="personName"> Hashir Rennie  </div>
+            <div id="text"> Now that our kids are old enough for the rollercoasters, we bought the season pass. It was well worth the money to get to ride the Twirler as much as we want! We can't wait for the Whirlpool to open.</div>
+         </div>
+         <div class="img3"><img src="../images/person3.jpg" alt="Person" height="50px" width="50px"></div>
+         <div class="three review-div">
+            <div id="personName"> Scarlett-Rose Serrano  </div>
+            <div id="text"> Being in a wheelchair, I was reluctant to visit the park but I was overwhelmed by how accommodating the park and staff were. There was preferred parking and ramps throughout. Even most of the rides were accessible. I had so much fun and will definitely be back!</div>
+         </div>
+         <div class="img4"><img src="../images/you.jpg" alt="Person" height="50px" width="50px"></div>
+         <div class="four review-div">
+            <form action="">
+               <div id="personName"> We want to hear from you!</div>
+               <input type="text" style="width:150px;" class="firstName" placeholder="First name"> 	<input type="text" style="width:150px;" class="lastName" placeholder="Last name"> <br>	
+               <textarea class="review" name="review" style="width:400px; height:50px;" placeholder="Please add your review."></textarea>
+               <br>
+               <input type="submit" class="keypoints__item__info__button">
+            </form>
+         </div>
+      </div>
+      <!--prefooter with an input feild-->
+      <div class="prefooter">
+         <input
+            class="prefooter__input"
+            type="email"
+            placeholder="Sign up to our newsletter"
+            />
+         <button class="prefooter__submit">Submit</button>
+      </div>
+      <footer>
+         <!-- Footer with four colums and some elements -->
+         <div class="footer-col">
+            <h5 class="footer-col__title">Information</h5>
+            <a href="#">Directions</a>
+            <a href="#">Parking</a>
+            <a href="#">Opening Times</a>
+         </div>
+         <div class="footer-col">
+            <h5 class="footer-col__title">Attractions</h5>
+            <a href="#">Rides</a>
+            <a href="#">Events</a>
+            <a href="#">Specials</a>
+         </div>
+         <div class="footer-col">
+            <h5 class="footer-col__title">Our Company</h5>
+            <a href="#">Our Company</a>
+            <a href="#">Help Center</a>
+            <a href="#">Press</a>
+            <a href="#">Jobs</a>
+         </div>
+         <div class="footer-col">
+            <h5 class="footer-col__title">Legal</h5>
+            <a href="#">Legal</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+            <a href="#">Privacy</a>
+         </div>
+      </footer>
+   </body>
+</html>

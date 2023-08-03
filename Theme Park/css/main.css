@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --lightblue: #4daada;
+  --blue: #4daada;
+  --orange: #fba91c;
+  --bp1: 800px;
+}
+
+body {
+  width: 100%;
+  padding-top: 90px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #00a1e6;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+  justify-content: space-between;
+}
+.header__links {
+  list-style-type: none;
+}
+
+.keypoints__item__info {
+  color: #00a1e6 !important;
+}
+
+.navbar__links__button > a {
+  text-decoration: none;
+  color: #4daadb;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar__links__button:hover {
+  cursor: pointer;
+}
+
+.navbar__links__booknow > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.footer-col > a {
+  color: white;
+}
+.footer-col > a:hover {
+  color: rgb(234, 234, 234);
+  font-weight: bold;
+}
+.prefooter {
+  width: 100%;
+  height: min-content;
+  padding: 20px;
+  background-color: #4daadb;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.prefooter__input {
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  border: none;
+}
+.prefooter__submit {
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  border: none;
+  padding: 15px;
+  background-color: #fba91c;
+  color: white;
+  transition: all 0.2s;
+}
+.prefooter__submit:hover {
+  transform: translateY(-10px);
+  transform: scale(110%);
+  background-color: #e49e26;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: min-content;
+  background-color: #00a1e6;
+  color: white;
+  display: flex;
+  padding: 60px 30px;
+  align-content: center;
+}
+
+.footer-col {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-col__title {
+  color: #fba91c;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-col__text {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+.footer-col__text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .footer-col {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-button {
+  display: none;
+  opacity: 0;
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  transition: all 1s;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mobile-menu__cross {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar__logo {
+  position: absolute;
+  left: 0;
+  width: 10%;
+}
+.navbar__links {
+  position: absolute;
+  right: 0;
+  display: flex;
+  height: 100%;
+}
+
+.navbar__links__button {
+  width: 100px;
+  height: 100%;
+  background-color: white;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4747a3;
+  transition: all 0.3s ease;
+}
+.navbar__links__button:hover {
+  background-color: rgb(238, 238, 238);
+}
+.navbar__links__booknow {
+  width: 100px;
+  background-color: #fba91c;
+  color: white;
+  height: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.navbar__links__booknow:hover {
+  cursor: pointer;
+  background-color: #ffb639;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+  }
+  .mobile-menu {
+    z-index: 1000000000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-menu__cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 30px;
+  }
+  .mobile-menu__links__button,
+  .mobile-menu__links__booknow {
+    text-align: center;
+    padding: 30px 50px;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    display: flex;
+    color: #4747a3;
+  }
+  .burger-button {
+    opacity: 100;
+    display: flex;
+    width: min-content;
+    height: min-content;
+    left: 0;
+    font-size: 40px;
+    align-items: center;
+    color: #4747a3;
+    padding-left: 20px;
+  }
+  .navbar__logo {
+    display: none;
+  }
+  .navbar__links__button {
+    display: none;
+  }
+}

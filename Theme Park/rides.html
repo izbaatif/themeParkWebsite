@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="../css/main.css" />
+   <link rel="stylesheet" href="../css/rides.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+   <title>Rides and Attractions</title>
+ </head>
+ <body>
+  <nav>
+    <!-- Top Nav bar -->
+    <img src="../images/logo.png" class="navbar__logo" />
+    <i class="fas fa-bars burger-button" id="burger-button"></i>
+    <div class="navbar__links">
+      <button class="navbar__links__button"><a href="index.html">Home</a></button>
+      <button class="navbar__links__button"><a href="booking.html">Tickets / Passess</a></button>
+      <button class="navbar__links__button"><a href="rides.html">Plan your visit</a></button>
+      <button class="navbar__links__booknow" id="booknow">
+        <a href="booking.html">Book Now</a>
+      </button>
+    </div>
+  </nav>
+​
+    <div class="mobile-menu" id="mobile-menu">
+      <i class="fas fa-times mobile-menu__cross" id="mobile-menu-cross"></i>
+      <button class="mobile-menu__links__button">
+        <p>Tickets</p>
+      </button>
+      <button class="mobile-menu__links__button"><p>Short Breaks</p></button>
+      <button class="mobile-menu__links__button"><p>Plan your visit</p></button>
+      <button class="mobile-menu__links__booknow" id="booknow">
+        <p>Book now</p>
+      </button>
+    </div>
+	
+     
+     
+    <!-- Ride searcher -->
+     <div class="ride-search-banner">
+        <!-- first banner for ride searcher -->
+        <img src="" alt="" class="ride-search-banner-img" />
+        <h2> <p style="color:#fba91c;">Check out our rides!</p> </h2>
+    </div>
+     
+    <div class="ride-search">
+        <!-- field for ride search input and output -->
+        <div class="search-one">
+            <!-- this will require a serach box, but I think selector would be much easier since we only have limited number of rides -->
+            <h3 id="rides"> <p style="color:#fba91c;">Our Rides</p> </h3>
+            <ul class="ridesSidebar" style="list-style:none;">
+              <li>Twirler</li>
+              <li>Coster</li>
+              <li>The Eye</li>
+              <li>Wild Mouse</li>
+              <li>Roller-Soaker</li>
+              <li>Log Flume</li>
+              <li>Dinosaur-Go-Around</li>
+            </ul>
+        </div>
+        <div class="search-two">
+            <!-- Field to output ride desccription -->
+            <div class="twirlerDetails">
+              <h3> <p class='twirlerDetails__title'>The Twirler</p></h3>
+              <p>This is our most famous ride!</p>
+              <p> Take a moment to brace yourself and experience the feeling of flying. The Twirler will take you on an adventure that you will never forget. This suspended rollercoaster takes you in and out 3 full loops, multiple tight corners and 2 corkscrews. It is the newest addition to our park, and can be ridden by anyone over 140cm and under 130 kg. </p>
+            </div>
+            <div class="twirlerImage">
+               <img src="../images/roller1.png" alt="" width="400px" height="400px">
+            </div>   
+            
+        </div>
+        
+    </div>
+
+     
+     
+    <!-- Accessibility information --> 
+    <div class="ride-search-banner">
+    <!-- Banner for accessibility information -->
+        <img src="" alt="" class="accessibility-banner-img" />
+        <h2><p style="color:#fba91c;">Park information including accessibility, food and services</p>  </h2>
+    </div>
+   <div class="accessibility-infobox">
+     <!-- Carousel images for park accesibility, food and services -->
+       <div class="infobox-one infobox"> 
+           <h3 style="color:#fba91c;" class="ibTitle">Food and drink</h3>
+           <p class="ibText"> The park offers a range of different food venues; vegan and vegetarian options are availible.
+            Free water fountains are scattered around the park. See map for details. </p>
+            <div class="ibImg">
+              <img src="../images/carousel1.jpg" class='infoxbox__img'/>
+            </div>
+            
+       </div>
+       <div class="infobox-two infobox"> 
+            <h3> <p style="color:#fba91c;">Vistors with small children</p> </h3>
+            <br> You can find family friendly bathrooms.   </br>
+            <br> We are also equipped with atracctions for smallest children (3-6 years old). </br>
+            <img src="../images/information.jpg"  class='infoxbox__img'/>
+
+       </div>
+       <div class="infobox-three infobox"> 
+           <h3> <p style="color:#fba91c;">Visitors with disabilities</p> </h3> 
+            <br> The park has extra parking spaces for disabeled customers </br>
+            <br> Some rides might not be suitable for people with impaired movement. Inquire at the front desk for details. </br>
+            <img src="../images/access.jpg"   class='infoxbox__img'/>
+       </div>
+   </div>
+​ 
+     
+     
+    <!-- Directions to the park --> 
+    <div class="ride-search-banner">
+    <!-- Banner for directions -->
+        <img src="" alt="" class="directions-banner-img" />
+        <h2> <p style="color:#fba91c;">How to find us</p> </h2>
+    </div>
+    <div class="directions">
+    <!-- Map and directions description -->
+        <div class="directions-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19666.53802564507!2d1.3714855868728788!3d51.964640712872885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d97990880b6999%3A0x6bed638d994ef37!2sPrincipality%20of%20Sealand!5e0!3m2!1sen!2skh!4v1623571653691!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="directions-description">
+            <h3> <p style="color:#fba91c;">Directions description and opening times</p> </h3>
+       
+            <br> To get to us from London:</br>
+                <br></br>
+                <ul class="directions-list">
+                    <li>Exit the city via A13</li>
+                    <li>Change from A13 to A12 in Aveley in the direction of Ipswich </li>
+                    <li>Take a right on A14 before Ipswich and follow the park signts</li>
+                </ul>
+            <p> We are located a short ferry ride from the shore. Parking for the guests is availible next to the ferry and marked with the park banners. </p>
+            <br> Opening Times: </br>
+                <br> We are open every day from 10:00 to 18:00 <strong>except</strong> first Monday of the month, Christmas Day and New Year's Day.</br> 
+            
+        </div>
+    </div> 
+    
+            
+            
+            
+	<!-- prefooter, same as on main page -->
+	<div class="prefooter">
+      <input
+        class="prefooter__input"
+        type="email"
+        placeholder="Sign up to our newsletter"
+      />
+      <button class="prefooter__submit">Submit</button>
+    </div>
+​
+<footer>
+  <!-- Footer with four colums and some elements -->
+    <div class="footer-col">
+      <h5 class="footer-col__title">Information</h5>
+      <a href="#">Directions</a>
+      <a href="#">Parking</a>
+      <a href="#">Opening Times</a>
+    </div>
+
+    <div class="footer-col">
+      <h5 class="footer-col__title">Attractions</h5>
+      <a href="#">Rides</a>
+      <a href="#">Events</a>
+      <a href="#">Specials</a>
+    </div>
+
+    <div class="footer-col">
+      <h5 class="footer-col__title">Our Company</h5>
+      <a href="#">Our Company</a>
+      <a href="#">Help Center</a>
+      <a href="#">Press</a>
+      <a href="#">Jobs</a>
+    </div>
+
+    <div class="footer-col">
+      <h5 class="footer-col__title">Legal</h5>
+      <a href="#">Legal</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+      <a href="#">Privacy</a>
+    </div>
+</footer>
+
+    <script src="../script.js"></script>
+     </div>
+   </footer>
+ </body>
+</html>
